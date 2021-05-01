@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>proj3_LCS</name>
+=======
+	<name>LCS</name>
+>>>>>>> jaimee_testing
 	<comment></comment>
 	<projects>
 	</projects>
