@@ -28,7 +28,19 @@ public class LabLCS {
 
 		//call read_input
 		ArrayList<String> seqs = read_input(args[0]);
-		System.out.println(seqs.toString());
+		System.out.println("Number of valid sequences given: " + seqs.size() + "\n");
+		
+		for (int i=0; i<seqs.size(); i++) {
+			System.out.println("Sequence #"+ (i+1) +" | Length: "+ seqs.get(i).length());
+			System.out.println(seqs.get(i) + "\n");
+		}
+		
+		for (int i=0; i<seqs.size(); i++) {
+			for (int j=i; j<seqs.size(); j++) {
+				System.out.println("Comparing sequences " + i + " and " + j);
+				LCSFinder pair = new LCSFinder(seqs.get(0), seqs.get(1));
+			}
+		}
 	}
 	
 	/**

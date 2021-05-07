@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * 
  */
@@ -11,7 +13,11 @@
 public class LCSFinder {
 	protected String seq1;
 	protected String seq2;
-	protected int[][] matrix; 
+	protected int m;
+	protected int n;
+	protected int[][] matrix;
+	protected int lcs_length;
+	protected String lcs;
 
 	/**
 	 * LCSFinder Constructor
@@ -21,22 +27,39 @@ public class LCSFinder {
 	public LCSFinder(String seq1, String seq2) {
 		this.seq1 = seq1;
 		this.seq2 = seq2;
-		this.matrix = new int[seq1.length()][seq2.length()];
+		this.m = seq1.length();
+		this.n = seq2.length();
+		this.matrix = new int[seq1.length()+1][seq2.length()+1];
 		
-		String lcs = this.longestCommonSubstring();
+		this.createTable();
+		this.longestCommonSubsequence();
 	}
 
-	public String longestCommonSubstring() {
-		for (int i=0; i<matrix.length; i++) {
-			
+	private void createTable() {
+		for (int i=1; i<=this.m; i++) {
+			for (int j=1; j<=this.n; j++) {
+				if (this.seq1.charAt(i-1) == this.seq2.charAt(j-1)) {
+					this.matrix[i][j] = this.matrix[i-1][j-1]+1;
+				} 
+				else if(this.matrix[i-1][j] >= this.matrix[i][j-1]) {
+					this.matrix[i][j] = this.matrix[i-1][j];
+				}
+				else {
+					this.matrix[i][j] = this.matrix[i][j-1];
+				}
+			}
 		}
-		
-		return "";
+		this.lcs_length = this.matrix[this.m][this.n];
 	}
 	
-	public String interpretMatrix() {
-		return "";
+	private void longestCommonSubsequence() {
+
 	}
 	
+	public void printLCS() {
+		System.out.println("Longest Common Subsequence: ");
+		System.out.println(this.lcs);
+		System.out.println("Length: " + this.lcs_length);
+	}
 	
 }
