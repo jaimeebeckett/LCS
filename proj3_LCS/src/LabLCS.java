@@ -35,12 +35,21 @@ public class LabLCS {
 			System.out.println(seqs.get(i) + "\n");
 		}
 		
+		int comparisons = 0;
 		for (int i=0; i<seqs.size(); i++) {
 			for (int j=i+1; j<seqs.size(); j++) {
 				System.out.println("Comparing sequences " + (i+1) + " and " + (j+1) + ":");
+				
+				long startTime = System.nanoTime();
 				new LCSFinder(seqs.get(i), seqs.get(j)).printLCS();
+				long endTime = System.nanoTime();
+				
+				System.out.println("Execution Time: " + (endTime-startTime) + " nanoseconds");
+				comparisons += 1;
 			}
 		}
+		System.out.println("Total number of pairwise comparisons: " + comparisons);
+		
 	}
 	
 	/**

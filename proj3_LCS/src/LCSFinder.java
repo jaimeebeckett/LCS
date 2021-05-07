@@ -1,9 +1,3 @@
-import java.util.Arrays;
-
-/**
- * 
- */
-
 /**
  * The class containing two strings and their longest common subsequence 
  * 
