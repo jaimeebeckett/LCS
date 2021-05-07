@@ -36,9 +36,9 @@ public class LabLCS {
 		}
 		
 		for (int i=0; i<seqs.size(); i++) {
-			for (int j=i; j<seqs.size(); j++) {
-				System.out.println("Comparing sequences " + i + " and " + j);
-				LCSFinder pair = new LCSFinder(seqs.get(0), seqs.get(1));
+			for (int j=i+1; j<seqs.size(); j++) {
+				System.out.println("Comparing sequences " + (i+1) + " and " + (j+1) + ":");
+				new LCSFinder(seqs.get(i), seqs.get(j)).printLCS();
 			}
 		}
 	}

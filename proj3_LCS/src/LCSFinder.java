@@ -17,7 +17,8 @@ public class LCSFinder {
 	protected int n;
 	protected int[][] matrix;
 	protected int lcs_length;
-	protected String lcs;
+	protected String lcs = "";
+	
 
 	/**
 	 * LCSFinder Constructor
@@ -32,7 +33,7 @@ public class LCSFinder {
 		this.matrix = new int[seq1.length()+1][seq2.length()+1];
 		
 		this.createTable();
-		this.longestCommonSubsequence();
+		this.longestCommonSubsequence(this.m, this.n);
 	}
 
 	private void createTable() {
@@ -52,14 +53,27 @@ public class LCSFinder {
 		this.lcs_length = this.matrix[this.m][this.n];
 	}
 	
-	private void longestCommonSubsequence() {
-
+	private void longestCommonSubsequence(int i, int j) {
+		if(i == 0 || j==0) {
+			return;
+		}
+		if(this.seq1.charAt(i-1) == this.seq2.charAt(j-1)) {
+			this.longestCommonSubsequence(i-1, j-1);
+			this.lcs += this.seq1.charAt(i-1);
+		}
+		else if(this.matrix[i-1][j] >= this.matrix[i][j-1]) {
+			this.longestCommonSubsequence(i-1, j);
+		}
+		else {
+			this.longestCommonSubsequence(i, j-1);
+		}
 	}
 	
 	public void printLCS() {
 		System.out.println("Longest Common Subsequence: ");
 		System.out.println(this.lcs);
 		System.out.println("Length: " + this.lcs_length);
+		System.out.println();
 	}
 	
 }
