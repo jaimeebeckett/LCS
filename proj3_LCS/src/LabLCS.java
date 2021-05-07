@@ -25,7 +25,7 @@ public class LabLCS {
 		if (args.length >= 2) {
 			System.out.println("Warning; only first argument is being used. Ignoring the rest");
 		}
-		
+
 		//call read_input
 		ArrayList<String> seqs = read_input(args[0]);
 		System.out.println(seqs.toString());

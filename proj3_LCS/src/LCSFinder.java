@@ -11,6 +11,7 @@
 public class LCSFinder {
 	protected String seq1;
 	protected String seq2;
+	protected int[][] matrix; 
 
 	/**
 	 * LCSFinder Constructor
@@ -20,11 +21,20 @@ public class LCSFinder {
 	public LCSFinder(String seq1, String seq2) {
 		this.seq1 = seq1;
 		this.seq2 = seq2;
+		this.matrix = new int[seq1.length()][seq2.length()];
 		
 		String lcs = this.longestCommonSubstring();
 	}
 
 	public String longestCommonSubstring() {
+		for (int i=0; i<matrix.length; i++) {
+			
+		}
+		
+		return "";
+	}
+	
+	public String interpretMatrix() {
 		return "";
 	}
 	
