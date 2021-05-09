@@ -11,10 +11,10 @@ public class LCSFinder {
 	protected int m;						/* The length of seq1 */
 	protected int n;						/* The length of seq2*/
 	protected int[][] matrix;				/* The matrix used for finding LCS */
-	protected int lcs_length;				/* The length of the LCS */
+	protected int lcsLength;				/* The length of the LCS */
 	protected String lcs = "";				/* The LCS */
-	protected int length_comparisons = 0;/* Num of comparisons when creating matrix*/
-	protected int print_comparisons = 0; /* Num of comparisons when printing LCS */
+	protected int lengthComparisons = 0; /* Num of comparisons when creating matrix*/
+	protected int printComparisons = 0;  /* Num of comparisons when printing LCS */
 
 	/**
 	 * LCSFinder Constructor that sets values for seq1, seq2, m, n, and creates 
@@ -45,17 +45,17 @@ public class LCSFinder {
 				else {
 					this.matrix[i][j] = this.matrix[i][j-1];
 				}
-				this.length_comparisons++;
+				this.lengthComparisons++;
 			}
 		}
-		this.lcs_length = this.matrix[this.m][this.n];
+		this.lcsLength = this.matrix[this.m][this.n];
 	}
 	
 	/*
 	 * This is a recursive function that finds the LCS by using this.matrix
 	 */
 	private void longestCommonSubsequence(int i, int j) {
-		this.print_comparisons++;
+		this.printComparisons++;
 		if(i == 0 || j==0) {
 			return;
 		}
@@ -77,10 +77,10 @@ public class LCSFinder {
 	public void printLCS() {
 		System.out.println("Longest Common Subsequence: ");
 		System.out.println(this.lcs);
-		System.out.println("Length: " + this.lcs_length);
-		System.out.println("Create Table Comparison: " + this.length_comparisons);
+		System.out.println("Length: " + this.lcsLength);
+		System.out.println("Create Table Comparison: " + this.lengthComparisons);
 		System.out.println("Find the Longest Common Subsequence Comparisons: " 
-						   + this.print_comparisons);
+						   + this.printComparisons);
 	}
 	
 }
