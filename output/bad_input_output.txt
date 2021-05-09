@@ -1,0 +1,38 @@
+Number of valid sequences given: 3
+
+Sequence #1 | Length: 3
+AGC
+
+Sequence #2 | Length: 1
+A
+
+Sequence #3 | Length: 1
+A
+
+**********************************************************************
+Comparisons #1: sequences 1 and 2:
+Longest Common Subsequence: 
+A
+Length: 1
+Create Table Comparison: 3
+Find the Longest Common Subsequence Comparisons: 4
+Execution Time: 1364000 ns
+**********************************************************************
+Comparisons #2: sequences 1 and 3:
+Longest Common Subsequence: 
+A
+Length: 1
+Create Table Comparison: 3
+Find the Longest Common Subsequence Comparisons: 4
+Execution Time: 31700 ns
+**********************************************************************
+Comparisons #3: sequences 2 and 3:
+Longest Common Subsequence: 
+A
+Length: 1
+Create Table Comparison: 1
+Find the Longest Common Subsequence Comparisons: 2
+Execution Time: 32200 ns
+**********************************************************************
+There were 3 successful pairwise comparisons
+Total Execution Time: 1427900 ns

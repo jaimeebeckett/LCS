@@ -1,0 +1,65 @@
+Number of valid sequences given: 4
+
+Sequence #1 | Length: 4
+TAAC
+
+Sequence #2 | Length: 6
+CTAGCA
+
+Sequence #3 | Length: 8
+CGTACATA
+
+Sequence #4 | Length: 10
+CCACCGCACG
+
+**********************************************************************
+Comparisons #1: sequences 1 and 2:
+Longest Common Subsequence: 
+TAA
+Length: 3
+Create Table Comparison: 24
+Find the Longest Common Subsequence Comparisons: 7
+Execution Time: 1121800 ns
+**********************************************************************
+Comparisons #2: sequences 1 and 3:
+Longest Common Subsequence: 
+TAA
+Length: 3
+Create Table Comparison: 32
+Find the Longest Common Subsequence Comparisons: 8
+Execution Time: 30000 ns
+**********************************************************************
+Comparisons #3: sequences 1 and 4:
+Longest Common Subsequence: 
+AAC
+Length: 3
+Create Table Comparison: 40
+Find the Longest Common Subsequence Comparisons: 10
+Execution Time: 48800 ns
+**********************************************************************
+Comparisons #4: sequences 2 and 3:
+Longest Common Subsequence: 
+CTACA
+Length: 5
+Create Table Comparison: 48
+Find the Longest Common Subsequence Comparisons: 10
+Execution Time: 107100 ns
+**********************************************************************
+Comparisons #5: sequences 2 and 4:
+Longest Common Subsequence: 
+CAGCA
+Length: 5
+Create Table Comparison: 60
+Find the Longest Common Subsequence Comparisons: 11
+Execution Time: 86700 ns
+**********************************************************************
+Comparisons #6: sequences 3 and 4:
+Longest Common Subsequence: 
+CGAC
+Length: 4
+Create Table Comparison: 80
+Find the Longest Common Subsequence Comparisons: 11
+Execution Time: 155700 ns
+**********************************************************************
+There were 6 successful pairwise comparisons
+Total Execution Time: 1550100 ns

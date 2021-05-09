@@ -1,0 +1,143 @@
+Number of valid sequences given: 6
+
+Sequence #1 | Length: 10
+ATAACGCTGA
+
+Sequence #2 | Length: 15
+TGTTGCTGGATCTCA
+
+Sequence #3 | Length: 20
+TACTGACTGCCTATGGCGCA
+
+Sequence #4 | Length: 25
+TGCGATGGTTTTGGCTGCCAATTGT
+
+Sequence #5 | Length: 30
+AGTGGTTAGAATGGGTCTTAACGTATATGA
+
+Sequence #6 | Length: 35
+ACAAGGATCATGGATATGGCACTTCTACGCCGGTT
+
+**********************************************************************
+Comparisons #1: sequences 1 and 2:
+Longest Common Subsequence: 
+TCGCTA
+Length: 6
+Create Table Comparison: 150
+Find the Longest Common Subsequence Comparisons: 17
+Execution Time: 1541300 ns
+**********************************************************************
+Comparisons #2: sequences 1 and 3:
+Longest Common Subsequence: 
+ATACGCTGA
+Length: 9
+Create Table Comparison: 200
+Find the Longest Common Subsequence Comparisons: 21
+Execution Time: 246800 ns
+**********************************************************************
+Comparisons #3: sequences 1 and 4:
+Longest Common Subsequence: 
+ATCGCTG
+Length: 7
+Create Table Comparison: 250
+Find the Longest Common Subsequence Comparisons: 25
+Execution Time: 137200 ns
+**********************************************************************
+Comparisons #4: sequences 1 and 5:
+Longest Common Subsequence: 
+ATAACGTGA
+Length: 9
+Create Table Comparison: 300
+Find the Longest Common Subsequence Comparisons: 22
+Execution Time: 269600 ns
+**********************************************************************
+Comparisons #5: sequences 1 and 6:
+Longest Common Subsequence: 
+ATAACGCT
+Length: 8
+Create Table Comparison: 350
+Find the Longest Common Subsequence Comparisons: 23
+Execution Time: 638800 ns
+**********************************************************************
+Comparisons #6: sequences 2 and 3:
+Longest Common Subsequence: 
+TGTGCTGGCCA
+Length: 11
+Create Table Comparison: 300
+Find the Longest Common Subsequence Comparisons: 22
+Execution Time: 284800 ns
+**********************************************************************
+Comparisons #7: sequences 2 and 4:
+Longest Common Subsequence: 
+TGTTGCTGATT
+Length: 11
+Create Table Comparison: 375
+Find the Longest Common Subsequence Comparisons: 25
+Execution Time: 280200 ns
+**********************************************************************
+Comparisons #8: sequences 2 and 5:
+Longest Common Subsequence: 
+TGTTGTGGTCTCA
+Length: 13
+Create Table Comparison: 450
+Find the Longest Common Subsequence Comparisons: 31
+Execution Time: 382900 ns
+**********************************************************************
+Comparisons #9: sequences 2 and 6:
+Longest Common Subsequence: 
+GTTGTGGATCTC
+Length: 12
+Create Table Comparison: 525
+Find the Longest Common Subsequence Comparisons: 34
+Execution Time: 407300 ns
+**********************************************************************
+Comparisons #10: sequences 3 and 4:
+Longest Common Subsequence: 
+TCGATGTTGGCGCA
+Length: 14
+Create Table Comparison: 500
+Find the Longest Common Subsequence Comparisons: 32
+Execution Time: 209000 ns
+**********************************************************************
+Comparisons #11: sequences 3 and 5:
+Longest Common Subsequence: 
+TAGATGCCTATGA
+Length: 13
+Create Table Comparison: 600
+Find the Longest Common Subsequence Comparisons: 32
+Execution Time: 234100 ns
+**********************************************************************
+Comparisons #12: sequences 3 and 6:
+Longest Common Subsequence: 
+ACGACTGTATGGCGC
+Length: 15
+Create Table Comparison: 700
+Find the Longest Common Subsequence Comparisons: 40
+Execution Time: 246600 ns
+**********************************************************************
+Comparisons #13: sequences 4 and 5:
+Longest Common Subsequence: 
+TGGATGGTTTGTAATG
+Length: 16
+Create Table Comparison: 750
+Find the Longest Common Subsequence Comparisons: 38
+Execution Time: 242100 ns
+**********************************************************************
+Comparisons #14: sequences 4 and 6:
+Longest Common Subsequence: 
+TCATGGTTTTCTGCCTT
+Length: 17
+Create Table Comparison: 875
+Find the Longest Common Subsequence Comparisons: 37
+Execution Time: 266700 ns
+**********************************************************************
+Comparisons #15: sequences 5 and 6:
+Longest Common Subsequence: 
+AGGTTGAATGGTCTACGTT
+Length: 19
+Create Table Comparison: 1050
+Find the Longest Common Subsequence Comparisons: 44
+Execution Time: 321100 ns
+**********************************************************************
+There were 15 successful pairwise comparisons
+Total Execution Time: 5708500 ns

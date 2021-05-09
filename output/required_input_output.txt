@@ -1,0 +1,65 @@
+Number of valid sequences given: 4
+
+Sequence #1 | Length: 29
+ACCGGTCGACTGCGCGGAAGCCGGCCGAA
+
+Sequence #2 | Length: 28
+GTCGTTCGGAATGCCGTTGCTCTGTAAA
+
+Sequence #3 | Length: 40
+ATTGCATTGCATGGGCGCGATGCATTTGGTTAATTCCTCG
+
+Sequence #4 | Length: 16
+CTTGCTTAAATGTGCA
+
+**********************************************************************
+Comparisons #1: sequences 1 and 2:
+Longest Common Subsequence: 
+GTCGTCGGAAGCCGGCCGAA
+Length: 20
+Create Table Comparison: 812
+Find the Longest Common Subsequence Comparisons: 34
+Execution Time: 2105500 ns
+**********************************************************************
+Comparisons #2: sequences 1 and 3:
+Longest Common Subsequence: 
+ACCGGCGATGCGGAACCCG
+Length: 19
+Create Table Comparison: 1160
+Find the Longest Common Subsequence Comparisons: 51
+Execution Time: 828900 ns
+**********************************************************************
+Comparisons #3: sequences 1 and 4:
+Longest Common Subsequence: 
+CTGCTAAGGCA
+Length: 11
+Create Table Comparison: 464
+Find the Longest Common Subsequence Comparisons: 34
+Execution Time: 424500 ns
+**********************************************************************
+Comparisons #4: sequences 2 and 3:
+Longest Common Subsequence: 
+GCTTCGGGCCGTGCTTGTAA
+Length: 20
+Create Table Comparison: 1120
+Find the Longest Common Subsequence Comparisons: 46
+Execution Time: 589000 ns
+**********************************************************************
+Comparisons #5: sequences 2 and 4:
+Longest Common Subsequence: 
+GCTTAATGTGCA
+Length: 12
+Create Table Comparison: 448
+Find the Longest Common Subsequence Comparisons: 30
+Execution Time: 476500 ns
+**********************************************************************
+Comparisons #6: sequences 3 and 4:
+Longest Common Subsequence: 
+TTGCTTATGTGCA
+Length: 13
+Create Table Comparison: 640
+Find the Longest Common Subsequence Comparisons: 43
+Execution Time: 601000 ns
+**********************************************************************
+There were 6 successful pairwise comparisons
+Total Execution Time: 5025400 ns
