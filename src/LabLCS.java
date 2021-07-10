@@ -41,13 +41,12 @@ public class LabLCS {
 
 		/* print out the valid sequences and their lengths */
 		for (int i = 0; i < seqs.size(); i++) {
-			System.out.println("Sequence #" + (i + 1) + " | Length: " + seqs.get(i)
-																		.length());
+			System.out.println("Sequence #" + (i + 1) + " | Length: " + seqs.get(i).length());
 			System.out.println(seqs.get(i) + "\n");
 		}
 		System.out.println("*".repeat(70));
 
-		int comparisons = 0;				/*The number of attempted comparisons*/
+		int comparisons = 0;			/*The number of attempted comparisons*/
 		int successfulComparisons = 0;		/*The number of successful comparisons*/
 		long totalExecutionTime = 0;		/*The run time for all comparisons*/
 
@@ -101,17 +100,15 @@ public class LabLCS {
 					 * ignored */
 					Pattern p = Pattern.compile("[atgcATGC]+");
 					Matcher m = p.matcher(line);
-
-					if (m.find()) {
-						/* If there is a value other than ATG or C in the sequence, 
-						 * it will not be used
-						 */
-						if (m.groupCount() >= 1) {
-							System.out.println("Error in sequence: " + line 
-												+ ". Sequence will not be used.");
-						} else {
-							sequences.add(m.group(0));
-						}
+					String sequence = "";
+					while(m.find()){
+						sequence += m.group(0);
+					}
+					if(sequence.length() > 0) {
+						sequences.add(sequence);
+					}
+					else{
+						System.out.println("Sequence was not valid");
 					}
 				}
 			}
